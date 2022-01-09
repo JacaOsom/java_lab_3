@@ -20,5 +20,40 @@ public class Main {
         /* statusy i wybór ze switch case to najczęstsze użycia enumów, enumy są często używane
         * w różnego rodzaju listach, selectach jako krótkie opcje wyboru np. jako status A, X (Aktualny, Usunięty) */
 
+        //KOMENTARZ pętla while z warunkiem TRUE jest nieskończona, dlatego nie możemy zakończyć działania pętli.
+        //Użyłem innego warunka, żeby zadanie miało lepszy odbiór.
+        Scanner scanner = new Scanner(System.in);
+        boolean isInputTrue = true;
+        while(isInputTrue){
+            System.out.print("Wprowadź liczbę: ");
+            switch (scanner.nextInt()){
+                case 1:
+                    System.out.println(LiczbyEnum.JEDEN);
+                    break;
+                case 2:
+                    System.out.println(LiczbyEnum.DWA);
+                    break;
+                case 3:
+                    System.out.println(LiczbyEnum.TRZY);
+                    break;
+                case 4:
+                    System.out.println(LiczbyEnum.CZTERY);
+                    break;
+                case 5:
+                    System.out.println(LiczbyEnum.PIĘĆ);
+                    break;
+                case 6:
+                    System.out.println(LiczbyEnum.SZEŚĆ);
+                    break;
+                case 0:
+                    System.out.println(StatusEnum.KONIEC);
+                    isInputTrue = false;
+                    break;
+                default:
+                    System.out.println(StatusEnum.KONTYNUUJEMY);
+                    break;
+
+            }
+        }
     }
 }
