@@ -30,11 +30,17 @@ public class Main {
             b) dodać studentów do Listy ArrayList,
             c) przeiterować listę za pomocą pętli forEach wywołując na każdym objekcie metodę toString() (w każdej iteracji);
          */
-        Student student1 = new Student("Jacek", "Placek", 12345, WydzialEnum.INFORMATYKI);
-        Student student2 = new Student("Marita", "Kowalska", 45452, WydzialEnum.FINANSOWY);
-        Student student3 = new Student("Joanna", "Nowak", 54321, WydzialEnum.ZARZĄDZANIA);
-        Student student4 = new Student("Mateusz", "Janowski", 12323, WydzialEnum.ADMINISTRACJI);
-        Student student5 = new Student("Alojzy", "Gregorij", 32354, WydzialEnum.FINANSOWY);
+        Osoba osoba1 = new Osoba("Jacek", "Placek", 12345);
+        Osoba osoba2 = new Osoba("Marita", "Kowalska", 45452);
+        Osoba osoba3 = new Osoba("Joanna", "Nowak", 54321);
+        Osoba osoba4 = new Osoba("Mateusz", "Janowski", 12323);
+        Osoba osoba5 = new Osoba("Alojzy", "Gregorij", 32354);
+
+        Student student1 = new Student(osoba1, WydzialEnum.INFORMATYKI);
+        Student student2 = new Student(osoba2, WydzialEnum.FINANSOWY);
+        Student student3 = new Student(osoba3, WydzialEnum.ZARZĄDZANIA);
+        Student student4 = new Student(osoba4, WydzialEnum.ADMINISTRACJI);
+        Student student5 = new Student(osoba5, WydzialEnum.INFORMATYKI);
 
         List<Student> studentList = new ArrayList<>();
         studentList.add(student1);

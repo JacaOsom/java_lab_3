@@ -36,11 +36,16 @@ public class Osoba {
         this.indeks = indeks;
     }
 
-
-    @Override
-    public String toString() {
-        return "Imię: " + imie +
-                "\nNazwisko: " + nazwisko +
-                "\nIndeks: " + indeks;
+    public void wyswietlInfoOsoba(){
+        System.out.println("Imie: " + imie);
+        System.out.println("Nazwisko: " + nazwisko);
+        System.out.println("Indeks: " + indeks);
     }
+
+//    @Override
+//    public String toString() {
+//        return "Imię: " + imie +
+//                "\nNazwisko: " + nazwisko +
+//                "\nIndeks: " + indeks;
+//    }
 }

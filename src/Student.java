@@ -1,4 +1,4 @@
-public class Student extends Osoba{
+public class Student {
     private Osoba osoba;
     private WydzialEnum wydzial;
 
@@ -7,11 +7,6 @@ public class Student extends Osoba{
 
     public Student(Osoba osoba, WydzialEnum wydzial) {
         this.osoba = osoba;
-        this.wydzial = wydzial;
-    }
-
-    public Student(String imie, String nazwisko, Integer indeks, WydzialEnum wydzial) {
-        super(imie, nazwisko, indeks);
         this.wydzial = wydzial;
     }
 
@@ -33,7 +28,7 @@ public class Student extends Osoba{
 
     @Override
     public String toString() {
-        return super.toString() + "\nWydział: " + wydzial;
-
+        return "Imie: " + getOsoba().getImie() + "\nNazwisko: " + getOsoba().getNazwisko() +
+                "\nIndeks: " + getOsoba().getIndeks() + "\nWydział: " + wydzial;
     }
 }
