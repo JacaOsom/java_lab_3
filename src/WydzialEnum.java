@@ -1,0 +1,3 @@
+public enum WydzialEnum {
+    ZARZĄDZANIA, INFORMATYKI, FINANSOWY, ADMINISTRACJI
+}
